@@ -1,0 +1,12 @@
+.nav-bar {
+  flex-grow: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-bar__option {
+  padding: 30px;
+}

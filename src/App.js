@@ -10,14 +10,16 @@ import './App.css';
 
 function App() {
   return (
-    <div className="app">
-      <Header 
-        title={"Chapman Custom Woodworking"}
-        navBarOptions={navBarOptions}
-      />
+    <div className="app--container">
+      <div className="app">
+        <Header 
+          title={"Chapman Custom Woodworking"}
+          navBarOptions={navBarOptions}
+        />
 
-      <HomePage />
+        <HomePage />
 
+      </div>
     </div>
   );
 }

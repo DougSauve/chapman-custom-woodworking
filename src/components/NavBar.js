@@ -2,6 +2,8 @@ import React from 'react';
 
 import DropdownItem from './DropdownItem';
 
+import './NavBar.css';
+
 const NavBar = props => {
   return (
     <div className="nav-bar">

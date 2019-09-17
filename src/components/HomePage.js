@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './HomePage.css';
+
 const HomePage = props => (
   <div className="home-page">
     <img

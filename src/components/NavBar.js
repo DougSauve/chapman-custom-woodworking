@@ -1,6 +1,6 @@
 import React from 'react';
 
-import DropdownItem from './DropdownItem';
+import DropdownAnchor from './DropdownAnchor';
 
 import './NavBar.css';
 
@@ -8,8 +8,8 @@ const NavBar = props => {
   return (
     <div className="nav-bar">
       {props.options.map(option => (
-        option.submenu
-        ? <DropdownItem
+        option.subMenu
+        ? <DropdownAnchor
           key={option.label}
           label={option.label}
           options={option.subMenu}
@@ -19,7 +19,11 @@ const NavBar = props => {
             className="nav-bar__option"
             key={option.label}  
           >
-            {option.label}
+            <div
+              className="nav-bar__option__content"
+            >
+              {option.label}
+            </div>
           </div>
         )
       ))}

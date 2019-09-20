@@ -1,0 +1,18 @@
+.dropdown-menu {
+  position: relative;
+  z-index: 100;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: #fff;
+}
+.dropdown-menu__item {
+  padding: 20px 15px;
+  line-height: 20px;
+  /* border-bottom: #fff 2px solid;   */
+  color: #003;
+}
+.dropdown-menu__item:hover {
+  background-color: #eee;
+}

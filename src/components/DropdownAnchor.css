@@ -1,0 +1,15 @@
+.dropdown-anchor {
+  height: 100%;
+  width: 150px;
+  line-height: 70px;
+  background-color: #fff; 
+}
+.dropdown-anchor__content {
+  padding: 0 30px 0 15px;
+
+  background-color: #fff;  
+  color: #003;
+}
+.dropdown-anchor__content:hover {
+  background-color: #eee;
+}

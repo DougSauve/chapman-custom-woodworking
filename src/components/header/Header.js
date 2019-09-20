@@ -8,12 +8,10 @@ const Header = props => (
   <>
     <div className="header">
       <div className="header__title">
-        {props.title}
+        {"Chapman Custom Woodworking"}
       </div>
 
-      <NavBar
-        options={props.navBarOptions}
-      />
+      <NavBar />
     </div>
   </>
 )

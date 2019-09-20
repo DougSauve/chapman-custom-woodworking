@@ -2,17 +2,20 @@ import React from 'react';
 
 import DropdownAnchor from './DropdownAnchor';
 
+import navBarOptions from './navBarOptions';
+
 import './NavBar.css';
 
 const NavBar = props => {
   return (
     <div className="nav-bar">
-      {props.options.map(option => (
+      {navBarOptions.map(option => (
         option.subMenu
         ? <DropdownAnchor
           key={option.label}
           label={option.label}
           options={option.subMenu}
+          wrapperClassName={"nav-bar__option"}
         />
         : (
           <div

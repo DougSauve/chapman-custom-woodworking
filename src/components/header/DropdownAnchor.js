@@ -23,19 +23,21 @@ const DropdownAnchor = props => {
   }
 
   return (
-    <div className="dropdown-anchor"
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    >
-      <div className="dropdown-anchor__content">  
-      {props.label}
+    <div className={props.wrapperClassName}>
+      <div className="dropdown-anchor"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+      >
+        <div className="dropdown-anchor__content">  
+        {props.label}
+        </div>
+        
+        {isDropdownOpen
+          && <DropdownMenu
+            options={props.options}
+          />
+        }
       </div>
-      
-      {isDropdownOpen
-        && <DropdownMenu
-          options={props.options}
-        />
-      }
     </div>
   );
 };

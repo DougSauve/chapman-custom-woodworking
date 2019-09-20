@@ -13,14 +13,17 @@
   justify-content: center;
 
   background-color: #fff;  
+  
+  font-size: 15px;
 }
 .nav-bar__option:hover {
   background-color: #eee;    
 }
 .nav-bar__option__content {
-
   padding: 0 15px;
   margin: 0 15px;
+
+  text-align: center;
 
   color: #003;
 }

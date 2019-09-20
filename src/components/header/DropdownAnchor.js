@@ -1,7 +1,7 @@
 import React from 'react';
 
 import DropdownMenu from './DropdownMenu';
-import './DropdownAnchor.css';
+import './DropdownAnchor.scss';
 
 const DropdownAnchor = props => {
   const [isDropdownOpen, setIsDropdownOpen] = React.useState(false);

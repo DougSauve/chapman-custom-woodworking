@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, } from 'react-router-dom';
 
 import DropdownAnchor from './DropdownAnchor';
 
@@ -11,22 +12,29 @@ const NavBar = props => {
     <div className="nav-bar">
       {navBarOptions.map(option => (
         option.subMenu
-        ? <DropdownAnchor
+        ? 
+        <Link
+          className="theme__link"
           key={option.label}
-          label={option.label}
-          options={option.subMenu}
-          wrapperClassName={"nav-bar__option"}
-        />
+          to='/'
+        >
+          <DropdownAnchor
+            label={option.label}
+            options={option.subMenu}
+            wrapperClassName={"nav-bar__option"}
+          />
+        </Link>
         : (
           <div
             className="nav-bar__option"
             key={option.label}  
           >
-            <div
-              className="nav-bar__option__content"
+            <Link
+              className="theme__link nav-bar__option__content"
+              to={option.href}
             >
               {option.label}
-            </div>
+            </Link>
           </div>
         )
       ))}

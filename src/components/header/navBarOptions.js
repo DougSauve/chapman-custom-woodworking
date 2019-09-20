@@ -4,16 +4,16 @@ export default [
     subMenu: [
       {
         label: "Our Story",
-        href: "#OurStory",
+        href: "/#OurStory",
       }, {
         label: "About Dan's Work",
-        href: "#DansWork",
+        href: "/#DansWork",
       }, {
         label: "Dan's Materials",
-        href: "#DansMaterials",
+        href: "/#DansMaterials",
       }, {
         label: "Custom Options",
-        href: "#CustomOptions",
+        href: "/#CustomOptions",
       }
     ]
   }, {

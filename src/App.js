@@ -8,8 +8,8 @@ import Header from './components/header/Header';
 import HomePage from './components/homePage/HomePage';
 import Gallery from './components/gallery/Gallery';
 
-import './App.css';
-import './theme.css';
+import './App.scss';
+import './theme/theme_components.scss';
 
 function App() {
   return (

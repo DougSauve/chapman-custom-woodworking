@@ -1,5 +1,8 @@
 import React from 'react';
 
+import TextBox from '../themeComponents/TextBox';
+import Heading from '../themeComponents/Heading';
+
 import './HomePage.css';
 
 const HomePage = props => (
@@ -11,6 +14,16 @@ const HomePage = props => (
         src="./assets/kitchen_pic.jpeg"
       />
     </div>
+
+    <Heading
+      text="Our Story"
+    />
+
+    <TextBox 
+      text="We are a really cool couple and you should buy our stuff. Where are my glasses?"
+    />
+
+    <div className="theme__end-of-page-spacer" />
   </div>
 );
 

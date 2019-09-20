@@ -1,7 +1,9 @@
+@import '../../theme/theme_variables.scss';
+
 .header {
   align-self: center;
-  width: 90%;
-  height: 15vh;
+  width: 100%;
+  height: $heading-height;
 
   display: flex;
   flex-direction: row;

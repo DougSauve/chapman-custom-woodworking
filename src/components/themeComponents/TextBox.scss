@@ -1,0 +1,14 @@
+.text-box--full-width {
+  width: 100%;
+  
+  display: flex;
+  box-shadow: 0 2px 2px #ccd;
+  
+  font-family: 'Oxygen';
+  color: #003;
+  
+  .text-box__text {
+    
+    padding: 15px;
+  }
+}

@@ -1,0 +1,16 @@
+@import '../../theme/theme_variables.scss';
+
+.heading {
+  width: 100%;
+  padding: 0 15px;
+  height: $heading-height;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .heading-text {
+    font-size: $heading-text-size;
+    color: $text-color-primary;
+  }
+}

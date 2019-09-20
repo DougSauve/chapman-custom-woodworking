@@ -1,15 +1,19 @@
 import React from 'react';
+import { Link, } from 'react-router-dom'; 
 
 import NavBar from './NavBar';
 
-import './Header.css';
+import './Header.scss';
 
 const Header = props => (
   <>
     <div className="header">
-      <div className="header__title">
+      <Link 
+        className="theme__link header__title"
+        to='/'
+      >
         {"Chapman Custom Woodworking"}
-      </div>
+      </Link>
 
       <NavBar />
     </div>

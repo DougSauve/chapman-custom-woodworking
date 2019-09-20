@@ -1,0 +1,19 @@
+.app--container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  .app {
+    width: 80%;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    background-color: #fff;
+  
+    font-family: 'Oxygen';
+  }
+}
+

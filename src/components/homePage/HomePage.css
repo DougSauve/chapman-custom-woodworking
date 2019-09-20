@@ -6,7 +6,10 @@
 
 .home-page__image-container {
   height: 70vh;
+  width: 100%;
   overflow: hidden;
 }
 .home-page__image {
+  z-index: -100;
+  width: 100%;
 }

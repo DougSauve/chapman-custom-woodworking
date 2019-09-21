@@ -1,9 +1,13 @@
 import React from 'react';
+import { Redirect, } from 'react-router-dom';
 
 import DropdownMenu from './DropdownMenu';
 import './DropdownAnchor.scss';
 
 const DropdownAnchor = props => {
+  const [renderRedirect, setRenderRedirect] = React.useState(false);
+  const [href, setHref] = React.useState(null); 
+
   const [isDropdownOpen, setIsDropdownOpen] = React.useState(false);
   const [pendingTimeOut, setPendingTimeout] = React.useState(null);
 
@@ -28,13 +32,25 @@ const DropdownAnchor = props => {
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
       >
-        <div className="dropdown-anchor__content">  
-        {props.label}
+        <div 
+          className="dropdown-anchor__content" 
+          onClick={() => {
+            setHref(props.href);
+            setRenderRedirect(true);
+          }}
+        >  
+          {props.label}
         </div>
         
         {isDropdownOpen
           && <DropdownMenu
             options={props.options}
+          />
+        }
+
+        {renderRedirect
+          && <Redirect
+            to={href}
           />
         }
       </div>

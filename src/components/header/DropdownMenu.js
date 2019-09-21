@@ -12,7 +12,12 @@ const DropdownMenu = props => (
       >
         <Link
           className={"theme__link"}
-          to={option.href}
+          to={{
+            pathname: option.href, 
+            state: {
+              scrollTo: option.label,
+            }
+          }}
         >
           {option.label}
         </Link>

@@ -25,10 +25,12 @@ function App() {
 }
 
 const getHeaderWrappedComponent = Component => {
-  return () => (
+  return (props) => (
     <>
       <Header />
-      <Component />
+      <Component
+        redirectState={props.location.state}
+      />
     </>
   );
 }

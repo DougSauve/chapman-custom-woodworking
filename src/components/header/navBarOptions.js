@@ -1,19 +1,20 @@
 export default [
   {
     label: "About Us",
+    href: "/",
     subMenu: [
       {
         label: "Our Story",
-        href: "/#OurStory",
+        href: "/",
       }, {
         label: "About Dan's Work",
-        href: "/#DansWork",
+        href: "/",
       }, {
         label: "Dan's Materials",
-        href: "/#DansMaterials",
+        href: "/",
       }, {
         label: "Custom Options",
-        href: "/#CustomOptions",
+        href: "/",
       }
     ]
   }, {
